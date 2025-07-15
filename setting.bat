@@ -37,10 +37,12 @@ if %CHECK_VER%==1 (
     if %errorlevel%==0 (
         echo Jupyter Notebook을 실행합니다.
         jupyter notebook
+        start chrome http://localhost:8888
     ) else (
         echo Jupyter가 설치되어 있지 않습니다. pip로 설치 후 실행합니다.
         pip install notebook
         jupyter notebook
+        start chrome http://localhost:8888
     )
 ) else (
     echo Python 3.13 이상이 필요합니다. 설치 가이드를 참고하세요.

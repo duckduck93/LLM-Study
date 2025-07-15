@@ -18,10 +18,14 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
         if command -v jupyter >/dev/null 2>&1; then
             echo "Jupyter Notebook을 실행합니다."
             jupyter notebook
+
+            open -a "Google Chrome" "http://localhost:8888"
         else
             echo "Jupyter가 설치되어 있지 않습니다. pip로 설치 후 실행합니다."
             pip install notebook
             jupyter notebook
+
+            open -a "Google Chrome" "http://localhost:8888"
         fi
     else
         echo "Python 3.13 이상이 필요합니다. 설치 가이드를 참고하세요."
