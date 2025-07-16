@@ -30,7 +30,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
     else
         echo "Python 3.13 이상이 필요합니다. 설치 가이드를 참고하세요."
         echo "--- Python 3.13 설치 가이드 ---"
-        echo "1. Homebrew가 없다면 설치: /bin/bash -c \"$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)\""
+        echo "1. Homebrew가 없다면 설치"
         echo "2. Python 설치: brew install python@3.13"
         echo "3. 터미널 재시작 후 python3 --version으로 확인"
     fi
